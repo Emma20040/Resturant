@@ -83,6 +83,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'resturant.wsgi.application'
 
 
+AUTH_USER_MODEL = 'base.CustomUser'
+
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
