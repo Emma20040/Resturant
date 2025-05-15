@@ -83,7 +83,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'resturant.wsgi.application'
 
 
+
+# custom authentication Backend
 AUTH_USER_MODEL = 'base.CustomUser'
+
+AUTHENTICATION_BACKENDS = [
+    'base.backends.EmailOrUsernameBackend',
+    'django.contrib.auth.backends.ModelBackend',  
+]
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
