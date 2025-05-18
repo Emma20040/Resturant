@@ -4,16 +4,6 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django import forms 
 from .models import CustomUser
 
-# forms to register new users
-class Register(UserCreationForm):
-    name = forms.CharField()
-    email = forms.EmailField()
-    phone_number = forms.IntegerField()
-    address= forms.CharField()
-
-    class Meta:
-        model = User
-        fields = ['name', 'email', 'phone_number', 'address', 'username']
 
 class LoginForm(UserCreationForm):
     name = forms.CharField()

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Customer
 from django.contrib import messages
-from .forms import Register, LoginForm, CustomerUserForm, CustomLoginForm
+from .forms import  CustomerUserForm, CustomLoginForm
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse, HttpRequest, HttpResponseForbidden
 # hompage view
